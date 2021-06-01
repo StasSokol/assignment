@@ -1,0 +1,23 @@
+﻿<Window x:Class="Test_work.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Test_work"
+        mc:Ignorable="d"
+        Title="Test" Height="464.617" Width="485.732" FontSize="16">
+    <Grid Margin="0,0,28.2,0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="7*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="0*"/>
+        </Grid.ColumnDefinitions>
+        <Label x:Name="label" Content="Path:" HorizontalAlignment="Left" Margin="16,46,0,0" VerticalAlignment="Top" Height="38" Width="52" FontSize="20"/>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="26" Margin="75,52,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="348" FontSize="20" Grid.ColumnSpan="3"/>
+        <ListBox x:Name="listBox" HorizontalAlignment="Left" Height="232" Margin="75,144,0,0" VerticalAlignment="Top" Width="348" Grid.ColumnSpan="3"/>
+        <Button x:Name="button" Content="Enter" HorizontalAlignment="Left" Margin="115.964,87,0,0" VerticalAlignment="Top" Width="75" FontSize="20" Click="button_Click" Height="30" Grid.Column="1"/>
+        <Button x:Name="button1" Content="Clear" Grid.Column="1" HorizontalAlignment="Left" Margin="116.964,387,0,0" VerticalAlignment="Top" Width="75" FontSize="20" Click="button1_Click"/>
+
+    </Grid>
+</Window>
